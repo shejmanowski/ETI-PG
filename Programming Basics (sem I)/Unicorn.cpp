@@ -19,8 +19,8 @@ extern "C" {
 #define ADD_TO_JUMP_MAX	100
 
 
-// narysowanie napisu txt na powierzchni screen, zaczynaj¹c od punktu (x, y)
-// charset to bitmapa 128x128 zawieraj¹ca znaki
+// narysowanie napisu txt na powierzchni screen, zaczynajÂ¹c od punktu (x, y)
+// charset to bitmapa 128x128 zawierajÂ¹ca znaki
 // draw a text txt on surface screen, starting from the point (x, y)
 // charset is a 128x128 bitmap containing character images
 void DrawString(SDL_Surface *screen, int x, int y, const char *text,
@@ -47,7 +47,7 @@ void DrawString(SDL_Surface *screen, int x, int y, const char *text,
 
 
 // narysowanie na ekranie screen powierzchni sprite w punkcie (x, y)
-// (x, y) to punkt œrodka obrazka sprite na ekranie
+// (x, y) to punkt Å“rodka obrazka sprite na ekranie
 // draw a surface sprite on a surface screen in point (x, y)
 // (x, y) is the center of sprite on screen
 void DrawSurface(SDL_Surface *screen, SDL_Surface *sprite, int x, int y) {
@@ -69,8 +69,8 @@ void DrawPixel(SDL_Surface *surface, int x, int y, Uint32 color) {
 	};
 
 
-// rysowanie linii o d³ugoœci l w pionie (gdy dx = 0, dy = 1) 
-// b¹dŸ poziomie (gdy dx = 1, dy = 0)
+// rysowanie linii o dÂ³ugoÅ“ci l w pionie (gdy dx = 0, dy = 1) 
+// bÂ¹dÅ¸ poziomie (gdy dx = 1, dy = 0)
 // draw a vertical (when dx = 0, dy = 1) or horizontal (when dx = 1, dy = 0) line
 void DrawLine(SDL_Surface *screen, int x, int y, int l, int dx, int dy, Uint32 color) {
 	for(int i = 0; i < l; i++) {
@@ -81,7 +81,7 @@ void DrawLine(SDL_Surface *screen, int x, int y, int l, int dx, int dy, Uint32 c
 	};
 
 
-// rysowanie prostok¹ta o d³ugoœci boków l i k
+// rysowanie prostokÂ¹ta o dÂ³ugoÅ“ci bokÃ³w l i k
 // draw a rectangle of size l by k
 void DrawRectangle(SDL_Surface *screen, int x, int y, int l, int k,
                    Uint32 outlineColor, Uint32 fillColor) {
@@ -319,7 +319,7 @@ int main(int argc, char **argv) {
 		return 1;
 		}
 
-	// tryb pe³noekranowy / fullscreen mode
+	// tryb peÂ³noekranowy / fullscreen mode
 	//rc = SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP,
 	//                                 &window, &renderer);
 	rc = SDL_CreateWindowAndRenderer(SCREEN_WIDTH, SCREEN_HEIGHT, 0,
@@ -345,7 +345,7 @@ int main(int argc, char **argv) {
 	                           SCREEN_WIDTH, SCREEN_HEIGHT);
 
 
-	// wy³¹czenie widocznoœci kursora myszy
+	// wyÂ³Â¹czenie widocznoÅ“ci kursora myszy
 	SDL_ShowCursor(SDL_DISABLE);
 
 	// wczytanie obrazka cs8x8.bmp
@@ -551,7 +551,7 @@ int main(int argc, char **argv) {
 		SDL_RenderCopy(renderer, scrtex, NULL, NULL);
 		SDL_RenderPresent(renderer);
 
-		// obs³uga zdarzeñ (o ile jakieœ zasz³y) / handling of events (if there were any)
+		// obsÂ³uga zdarzeÃ± (o ile jakieÅ“ zaszÂ³y) / handling of events (if there were any)
 		while(SDL_PollEvent(&event)) {
 			switch(event.type) {
 				case SDL_KEYDOWN:
