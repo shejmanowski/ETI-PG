@@ -1,2 +1,2 @@
 # ETI-PG
-University projects / laboratories
+University projects & laboratories.
