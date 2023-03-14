@@ -1,2 +1,4 @@
 # Operating systems
-Second semster subject.
+Second semster subject.  
+  
+Bash scripts from laboratories.
