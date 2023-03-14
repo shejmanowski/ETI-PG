@@ -333,7 +333,7 @@ void checkState(GameStatus* gs) {
 	gs->piles = new Pile * [MAX_NUMBER_OF_PILES];
 	int previusColor[MAX_NUMBER_OF_PILES], areColorsOnPileSame[MAX_NUMBER_OF_PILES] = { 1, 1, 1, 1, 1, 1 };
 	int stateIsOk = 1;
-	while (getchar() != EOF) {		//wczytywanie danych do koñca pliku
+	while (getchar() != EOF) {		//wczytywanie danych do koÃ±ca pliku
 		gs->piles[indexOfPile] = new Pile;
 		gs->piles[indexOfPile]->numberOfCards = 0;
 		gs->piles[indexOfPile]->sumOfValues = 0;
